@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanwil Kemenag Sumsel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(to right, #e8f5e9, #f1f8e9);
+        color: #212121;
+      }
+
+      /* HEADER */
+      header {
+        background: linear-gradient(90deg, #ffffff, #ffffff);
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .nav-logo img {
+        width: 45px;
+      }
+
+      .nav-menu {
+        display: flex;
+        gap: 25px;
+      }
+
+      .nav-menu a {
+        text-decoration: none;
+        color: #1b5e20;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.3s ease;
+      }
+
+      .nav-menu a:hover {
+        color: #004d40;
+        transform: scale(1.05);
+      }
+
+      /* HERO */
+      .hero {
+        background: linear-gradient(to bottom right, #1b5e20, #2e7d32);
+        color: white;
+        text-align: center;
+        padding: 80px 20px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        font-weight: bold;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+        font-weight: bold;
+      }
+
+      .hero p {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+
+      .cta-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .btn-jelajahi {
+        background-color: #00bfa5;
+        padding: 12px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.3s;
+      }
+
+      .btn-jelajahi:hover {
+        background-color: #008e76;
+      }
+
+      .menu-pilihan {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .menu-item {
+        background-color: #ffca28;
+        color: #1b5e20;
+        padding: 10px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .menu-item:hover {
+        background-color: #fbc02d;
+        transform: scale(1.05);
+      }
+
+      .cta-button {
+        padding: 15px 30px;
+        font-size: 18px;
+        color: white;
+        background-color: #009688;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        animation: zoomIn 1.2s ease-out;
+      }
+
+      .cta-button:hover {
+        background-color: #00796b;
+        transform: scale(1.05);
+      }
+
+      /* SOCIAL MEDIA */
+      .social-media {
+        background-color: #ffffff;
+        padding: 50px 20px;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        flex-wrap: wrap;
+      }
+
+      .social-media a {
+        color: #212121;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        transition: transform 0.3s;
+      }
+
+      .social-media a:hover {
+        transform: scale(1.1);
+      }
+
+      .social-media i {
+        font-size: 36px;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      /* ANIMATIONS */
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes zoomIn {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 36px;
+        }
+        .hero h2 {
+          font-size: 28px;
+        }
+        .nav-menu {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+          margin-top: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav-logo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Kementerian_Agama_new_logo.png/640px-Kementerian_Agama_new_logo.png"
+          alt="Logo Kemenag"
+        />
+        <strong style="color: #1b5e20">Kemenag Sumsel</strong>
+      </div>
+      <nav class="nav-menu">
+        <a href="https://sumsel.kemenag.go.id/"
+          ><i class="fas fa-home"></i> Beranda</a
+        >
+        <a href="https://sumsel.kemenag.go.id/artikel/view/39857"
+          ><i class="fas fa-phone"></i> Kontak</a
+        >
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>SELAMAT DATANG</h1>
+      <h2>Di Pusat Informasi Kanwil Kemenag</h2>
+      <h2>Sumatera Selatan</h2>
+      <p>Pusat Sumber Informasi Terpercaya!!</p>
+      <a class="cta-button" href="https://sumsel.kemenag.go.id" target="_blank"
+        >Jelajahi Sekarang</a
+      >
+      <div class="cta-container">
+        <h2>
+          <div class="menu-pilihan">
+            <a href="https://sumsel.kemenag.go.id/berita" class="menu-item"
+              >Berita</a
+            >
+            <a
+              href="https://sumsel.kemenag.go.id/artikel/view/43255"
+              class="menu-item"
+              >PPID</a
+            >
+            <a href="https://sumsel.kemenag.go.id/agenda" class="menu-item"
+              >Agenda</a
+            >
+            <a
+              href="https://sumsel.kemenag.go.id/artikel?halaman=1"
+              class="menu-item"
+              >Pengumuman</a
+            >
+          </div>
+        </h2>
+      </div>
+    </section>
+
+    <section class="social-media">
+      <a href="https://www.facebook.com/sumsel.kemenag?_rdc=1&_rdr#"
+        ><i class="fab fa-facebook" style="color: #1877f2"></i>Facebook</a
+      >
+      <a href="https://www.instagram.com/kanwilkemenagsumsel"
+        ><i class="fab fa-instagram" style="color: #c13584"></i>Instagram</a
+      >
+      <a href="https://x.com/kemenag_sumsel"
+        ><i class="fab fa-twitter" style="color: #1da1f2"></i>Twitter</a
+      >
+      <a href="https://www.tiktok.com/@kemenagsumsel"
+        ><i class="fab fa-tiktok" style="color: #000"></i>Tiktok</a
+      >
+      <a href="https://www.youtube.com/@kanwilkemenagsumsel"
+        ><i class="fab fa-youtube" style="color: #ff0000"></i>Youtube</a
+      >
+    </section>
+  </body>
+</html>
